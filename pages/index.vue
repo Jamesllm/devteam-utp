@@ -18,11 +18,23 @@
           </div>
         </div>
       </section>
+      <section>
+        descargar files
+        <div v-for="file in files">
+          <a :href="file.url">{{ file.title }}</a>
+        </div>
+      </section>
     </main>
   </div>
 </template>
 
 <script setup>
+import pdf from "@/assets/DRAGO.pdf";
+import doc from "@/assets/DRAGO.docx";
+import pptx from "@/assets/DRAGO.pptx";
+import txt from "@/assets/DRAGO.txt";
+import xlsx from "@/assets/DRAGO.xlsx";
+
 const proyects = [
   {
     title: "Barber Can",
@@ -55,6 +67,29 @@ const proyects = [
   {
     title: "Text Encrypt",
     description: "Consiste en elaborar una web que permita encriptar texto y desencriptarlo."
+  }
+]
+
+const files = [
+  {
+    title: "PDF",
+    url: pdf
+  },
+  {
+    title: "DOCX",
+    url: doc
+  },
+  {
+    title: "PPTX",
+    url: pptx
+  },
+  {
+    title: "TXT",
+    url: txt
+  },
+  {
+    title: "XLSX",
+    url: xlsx
   }
 ]
 </script>
