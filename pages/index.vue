@@ -5,7 +5,7 @@
       <section class="mb-32 max-w-screen-xl w-3/4 mx-auto">
         <div class="text-center">
           <h2 class="text-3xl sm:text-4xl font-bold text-blue-500">
-            Proyectos
+            Proyectos si
           </h2>
           <p class="mt-4 text-gray-300 font-semibold">
             Proyectos desarrollados por los integrantes de la DEVTEAM
